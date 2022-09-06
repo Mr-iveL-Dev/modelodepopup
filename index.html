@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Popup</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="btn" onclick="popupAlternar()">Inscreva-se</a>
+  <div id="popup">
+    <div class="content">
+      <img src="email.png">
+      <h2>Inscreva-se e saiba mais</h2>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe, sequi! Mollitia deserunt voluptas atque quod.</p>
+      <div class="inputBox">
+        <input type="email" placeholder="Email">
+      </div>
+      <div class="inputBox">
+        <input type="submit" value="Enviar" class="btn">
+      </div>
+    </div> 
+    <a class="sair" onclick="popupAlternar()"><img src="sair.png"></a>
+  </div>
+  <script>
+    function popupAlternar(){
+      const popup = document.getElementById('popup');
+      popup.classList.toggle('active');
+    }
+  </script>
+</body>
+</html>
